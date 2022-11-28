@@ -1,25 +1,26 @@
 <template>
-    <Header>
-      <img src="../assets/logo.png" alt="">
-    </Header>
+    <div class="bg-element">
+      <img src="../assets/logo.svg" alt="">
+    </div>
   </template>
   
   <script>
   export default {
-      name:'HeaderComponent',
+    name: 'HeaderComp',
   }
   </script>
   
-  <style lang="scss" scoped>
-  *{
-      margin: 0 auto;
-  }
-  header {
-      height: 50px;
-      background-color: hsl(210deg 21% 23%);
-  }
-  img {
-      height: 50%;      
-      padding: 1% 2%;
-  }
+  <!-- Add "scoped" attribute to limit CSS to this component only -->
+  <style scoped lang="scss">
+    
+    div{
+      padding: 20px;
+      height: 90px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    img{
+      height: 100%;
+    }
   </style>
